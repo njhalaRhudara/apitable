@@ -16,36 +16,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.apitable.interfaces.automation.facede;
 
-import java.util.Map;
+package com.apitable.automation.service;
 
 /**
- * default automation service facade implement.
+ * interface for action type.
  */
-public class DefaultAutomationServiceFacadeImpl implements AutomationServiceFacade {
+public interface IAutomationActionTypeService {
 
-    @Override
-    public void publishSchedule(Long scheduleId) {
-        // do nothing
-    }
+    String getActionTypeIdByEndpoint(String endpoint);
 
-    @Override
-    public void copy(Map<String, String> newTriggerMap) {
-
-    }
-
-    @Override
-    public void createSchedule(String spaceId, String triggerId, String scheduleConfig) {
-    }
-
-    @Override
-    public void updateSchedule(String triggerId, String scheduleConfig) {
-        
-    }
-
-    @Override
-    public void deleteSchedule(String triggerId, Long userId) {
-
-    }
+    /**
+     * weather is send email action.
+     *
+     * @param actionTypeId action type
+     * @return boolean
+     */
+    boolean isSendEmailAction(String actionTypeId);
 }

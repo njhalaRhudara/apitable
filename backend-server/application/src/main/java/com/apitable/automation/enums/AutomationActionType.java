@@ -16,36 +16,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.apitable.interfaces.automation.facede;
 
-import java.util.Map;
+package com.apitable.automation.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 /**
- * default automation service facade implement.
+ * automation action type.
  */
-public class DefaultAutomationServiceFacadeImpl implements AutomationServiceFacade {
+@Getter
+@AllArgsConstructor
+public enum AutomationActionType {
 
-    @Override
-    public void publishSchedule(Long scheduleId) {
-        // do nothing
-    }
+    SEND_MAIL("sendMail"),
 
-    @Override
-    public void copy(Map<String, String> newTriggerMap) {
+    SEND_REQUEST("sendRequest"),
 
-    }
 
-    @Override
-    public void createSchedule(String spaceId, String triggerId, String scheduleConfig) {
-    }
+    ;
 
-    @Override
-    public void updateSchedule(String triggerId, String scheduleConfig) {
-        
-    }
 
-    @Override
-    public void deleteSchedule(String triggerId, Long userId) {
-
-    }
+    private final String type;
 }

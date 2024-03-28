@@ -16,36 +16,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.apitable.interfaces.automation.facede;
+package com.apitable.automation.model;
 
-import java.util.Map;
+import java.time.LocalDateTime;
+import lombok.Data;
 
 /**
- * default automation service facade implement.
+ * AutomationRunHistoryDTO base info.
  */
-public class DefaultAutomationServiceFacadeImpl implements AutomationServiceFacade {
+@Data
+public class AutomationRunHistoryDTO {
 
-    @Override
-    public void publishSchedule(Long scheduleId) {
-        // do nothing
-    }
+    private String robotId;
 
-    @Override
-    public void copy(Map<String, String> newTriggerMap) {
+    private String taskId;
 
-    }
+    private Integer status;
 
-    @Override
-    public void createSchedule(String spaceId, String triggerId, String scheduleConfig) {
-    }
+    private LocalDateTime createdAt;
 
-    @Override
-    public void updateSchedule(String triggerId, String scheduleConfig) {
-        
-    }
+    private String actionIds;
 
-    @Override
-    public void deleteSchedule(String triggerId, Long userId) {
+    private String actionTypeIds;
 
-    }
+    private String errorMessages;
+
 }
