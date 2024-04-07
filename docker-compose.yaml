@@ -176,7 +176,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_ROOT_HOST="%"
       - TZ=${TIMEZONE}
     command: --default-authentication-plugin=mysql_native_password
       --character-set-server=utf8mb4
