@@ -87,7 +87,7 @@ limit:
   space-max-count: ${SPACE_MAX_COUNT:10}
   max-file-size: ${EXPORT_MAX_FILE_SIZE:20971520}
   max-column-count: ${MAX_COLUMN_COUNT:200}
-  max-row-count: ${MAX_ROW_COUNT:50000}
+  max-row-count: ${MAX_ROW_COUNT:500000}
   template-max-count: ${TEMPLATE_MAX_COUNT:20}
   dsb-widget-max-count: ${DSB_WIDGET_MAX_COUNT:30}
   dst-robot-max-count: ${DST_ROBOT_MAX_COUNT:10}
