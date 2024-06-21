@@ -22,7 +22,6 @@
     "node": "16.15.0"
   },
   "dependencies": {
-    "cross-env": "^7.0.0",
     "@apitable/ai": "workspace:*",
     "@apitable/api-client": "workspace:*",
     "@apitable/components": "workspace:*",
@@ -217,6 +216,7 @@
     "yjs": "^13.6.8"
   },
   "devDependencies": {
+    "cross-env": "^7.0.0",
     "@next/bundle-analyzer": "^12.2.2",
     "@svgr/webpack": "^6.2.1",
     "@tailwindcss/typography": "^0.5.9",
