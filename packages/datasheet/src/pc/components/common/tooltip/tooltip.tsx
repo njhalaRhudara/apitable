@@ -41,7 +41,7 @@ export const Tooltip: FC<React.PropsWithChildren<ITooltipProps & AntdTooltipProp
   offset = [0, -3],
   overflowWidth,
   rowsNumber,
-  visible = false,
+  visible,
   open,
   ...props
 }) => {
